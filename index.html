@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【非公式】万博 自分用サイト</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">自分用万博攻略サイト</h1>
+        <nav>
+            <li class="menu-item"><a href="index.html">ホーム</a></li>
+            <li class="menu-item"><a href="map.html">便利なMAP</a></li>
+            <li class="menu-item"><a href="gurume.html">グルメ情報</a></li>
+            <li class="menu-item"><a href="">マイチケット</a></li>
+            <li class="menu-item"><a href="">混雑・イベント情報</a></li>
+            <li class="menu-item"><a href="">当日予約</a></li>
+        </nav>
+    </header>
+<br>
+    <center>
+        <script class="end_days">
+        var y = 2025;
+        var m = 10;
+        var d = 19;
+
+        var tgday = y + "/" + m + "/" + d;
+        var now = new Date();
+        var days = Math.ceil((Date.parse(tgday) - now.getTime()) / (24 * 60 * 60 * 1000));
+
+        if(days == 0) {
+            document.write("開催終了まで");
+            document.write("あと1日/n楽しもう！！");
+        } else if(days < 0) {
+            document.write("2025年大阪関西万博は2025年10月13日に終了しました...");
+        } else {
+            document.write("開催終了まで、あと <b>" + days + "</b>日")
+        }
+        </script>
+    </center>
+
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
