@@ -17,27 +17,9 @@
             <li class="menu-item"><a href="reservation.html">当日予約</a></li>
         </nav>
     </header>
-<br>
-    <center>
-        <script class="end_days">
-        var y = 2025;
-        var m = 10;
-        var d = 19;
+    <br>
 
-        var tgday = y + "/" + m + "/" + d;
-        var now = new Date();
-        var days = Math.ceil((Date.parse(tgday) - now.getTime()) / (24 * 60 * 60 * 1000));
-
-        if(days == 0) {
-            document.write("開催終了まで");
-            document.write("あと1日/n楽しもう！！");
-        } else if(days < 0) {
-            document.write("2025年大阪関西万博は" + y + "年" + m + "月" + d + "日に終了しました...");
-        } else {
-            document.write("開催終了まで、あと <b>" + days + "</b>日")
-        }
-        </script>
-    </center>
+    <a href="https://ticket.expo2025.or.jp/myticket/"><h2>・マイチケットへアクセス(外部リンク)</h2></a>
 
     <link rel="stylesheet" href="style.css">
 </body>
